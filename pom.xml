@@ -8,11 +8,12 @@
     <description>Code Camp Demo</description>
 
     <properties>
-        <jdk.version>15</jdk.version>
+        <jdk.version>1.17</jdk.version>
         <junit.jupiter.version>5.7.1</junit.jupiter.version>
         <maven.compiler.version>3.8.1</maven.compiler.version>
         <maven.surefire.version>2.22.2</maven.surefire.version>
         <selenium.version>3.141.59</selenium.version>
+        <rest.version>5.3.0</rest.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
@@ -43,6 +44,13 @@
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-support</artifactId>
             <version>${selenium.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>${rest.version}</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
     <build>
